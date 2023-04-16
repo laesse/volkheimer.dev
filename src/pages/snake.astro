@@ -1,0 +1,16 @@
+---
+import BaseHead from '../components/BaseHead.astro';
+import Footer from '../components/Footer.astro';
+import { SnakeGame } from '../components/Snake';
+---
+
+<html lang="en">
+  <head>
+    <BaseHead title={'snake'} description={'snake game'} />
+  </head>
+  <body class="bg-gray-900 text-slate-200">
+    <main class="h-screen flex justify-center flex-col gap-4">
+      <SnakeGame client:only />
+    </main>
+  </body>
+</html>
